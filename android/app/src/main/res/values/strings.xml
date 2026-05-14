@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">SyncPack</string>
+    <string name="title_activity_main">SyncPack</string>
+    <string name="package_name">com.kavindu.syncpack</string>
+    <string name="custom_url_scheme">com.kavindu.syncpack</string>
+</resources>
