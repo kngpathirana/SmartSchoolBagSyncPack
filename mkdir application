@@ -1,0 +1,26 @@
+# app folder hadanna + files move karanna
+mkdir app
+
+git mv android app/android
+git mv dist app/dist
+git mv functions app/functions
+git mv public app/public
+git mv src app/src
+git mv ATTRIBUTIONS.md app/ATTRIBUTIONS.md
+git mv FIREBASE_SETUP.md app/FIREBASE_SETUP.md
+git mv capacitor.config.json app/capacitor.config.json
+git mv firebase-database-rules.json app/firebase-database-rules.json
+git mv index.html app/index.html
+git mv package-lock.json app/package-lock.json
+git mv package.json app/package.json
+git mv postcss.config.mjs app/postcss.config.mjs
+git mv vite.config.ts app/vite.config.ts
+
+# node_modules remove karanna (should not be in GitHub)
+git rm -r --cached node_modules
+echo "node_modules/" >> .gitignore
+
+# Commit + push
+git add .
+git commit -m "Restructure: move app files into app/ folder, remove node_modules"
+git push
